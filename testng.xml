@@ -1,0 +1,18 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="My suite" parallel="classes" thread-count="5">
+
+    <test name="FirstCase" >
+        <classes>
+            <class name="FirstCase.LogginFirstPageParrot" />
+            <class name="FirstCase.LogginSecondPageRemote" />
+        </classes>
+    </test>
+
+    <test name="SecondCase" >
+        <classes>
+            <class name="SecondCase.LogginFirstPageRemote" />
+            <class name="SecondCase.LogginSecondPageParrot" />
+        </classes>
+    </test>
+</suite>
